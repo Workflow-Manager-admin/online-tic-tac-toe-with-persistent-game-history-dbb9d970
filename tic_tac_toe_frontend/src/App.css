@@ -58,6 +58,51 @@
   transition: color 0.3s ease;
 }
 
+/* --- Tic Tac Toe Game Styles --- */
+.ttt-board {
+  margin-top: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+.ttt-square {
+  outline: none;
+  border-radius: 0;
+  font-family: inherit;
+  font-weight: bold;
+  background: var(--bg-secondary);
+}
+.spinner {
+  display: inline-block;
+  vertical-align: middle;
+}
+.game-status-display {
+  min-height: 28px;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+/* Minimal button theme override */
+.btn {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.btn:active {
+  opacity: 0.9;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .theme-toggle {
   position: absolute;
   top: 20px;
